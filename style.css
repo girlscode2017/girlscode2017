@@ -1,6 +1,8 @@
 /* Fonts from Google Fonts - more at https://fonts.google.com */
 @import url('https://fonts.googleapis.com/css?family=Merriweather:400,700');
 @import url('https://fonts.googleapis.com/css?family=Encode+Sans+Semi+Expanded:300|Open+Sans+Condensed:300|Open+Sans:300');
+@import url('https://fonts.googleapis.com/css?family=Encode+Sans+Semi+Expanded:600');
+
 @font-face {
   font-family: "MaryAnn-Bold";
   src: url("MaryAnn-Bold.otf");
@@ -9,6 +11,7 @@
   font-family: "MaryAnn";
   src: url("MaryAnn.otf");
 }
+
 
 body {
   background-color: white;
@@ -102,6 +105,11 @@ body {
   text-align: center;
   margin-top: 0;
   line-height: 1.5em;
+  padding-left: 0;
+}
+
+.instructorText li {
+  list-style: none;
 }
 
 .lessons {
@@ -110,7 +118,13 @@ body {
   color: #4c4c4c;
 }
 
-.lessonTitle {}
+.lessonTitle {
+  font-weight: 600;
+}
+
+.lessonInfo p {
+  font-size: 20px;
+}
 
 .lessonInfo {
   border: 1px solid #1E232A;
@@ -119,7 +133,7 @@ body {
 
 .lessonInfo p, .lessonInfo ul {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 5px;
 }
 
 .instagramDiv {
